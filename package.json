@@ -1,0 +1,41 @@
+{
+  "name": "koa-api",
+  "version": "1.0.0",
+  "description": "RESTFull API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./bin",
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dominhhai/koa-api.git"
+  },
+  "author": "Hai Do Minh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dominhhai/koa-api/issues"
+  },
+  "homepage": "https://github.com/dominhhai/koa-api#readme",
+  "dependencies": {
+    "babel-plugin-transform-async-to-generator": "^6.8.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.10.3",
+    "babel-register": "^6.9.0",
+    "koa": "^2.0.0",
+    "koa-bodyparser": "^3.1.0",
+    "koa-json": "^2.0.2",
+    "koa-log4": "^2.0.1",
+    "koa-onerror": "^2.0.0",
+    "koa-router": "^7.0.1",
+    "koa-static": "^3.0.0"
+  },
+  "devDependencies": {
+    "del": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-nodemon": "^2.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.4"
+  }
+}
