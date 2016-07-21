@@ -4,9 +4,10 @@
   "description": "RESTFull API",
   "main": "bin",
   "scripts": {
-    "babel": "babel src -s -d bin",
+    "babel": "babel src -w -s -d bin",
     "build": "rm -rf bin && npm run babel",
-    "start": "node bin",    
+    "dev": "nodemon --debug -w bin",
+    "start": "node bin",
     "test": "test"
   },
   "repository": {

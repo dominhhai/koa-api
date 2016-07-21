@@ -5,7 +5,7 @@ import point from './point'
 const router = koaRouter()
 
 router.get('/', async (ctx, next) => {
-  ctx.body = { test: 'index' }
+  ctx.body = { index: 'index' }
 })
 
 router.use('/users', users.routes(), users.allowedMethods())
