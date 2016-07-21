@@ -4,9 +4,11 @@
   "description": "RESTFull API",
   "main": "bin",
   "scripts": {
-    "babel": "babel src -w -s -d bin",
-    "build": "rm -rf bin && npm run babel",
-    "dev": "nodemon --debug -w bin",
+    "babel": "rm -rf bin && babel server -w -s -d bin",
+    "webpack": "webpack --progress --colors --watch",
+    "webpack-dev": "webpack-dev-server --progress --colors",
+    "nodemon": "nodemon --debug -w bin",
+    "dev": "npm run babel | npm run nodemon",
     "start": "node bin",
     "test": "test"
   },
@@ -36,6 +38,9 @@
     "babel-cli": "^6.11.4",
     "babel-plugin-transform-async-to-generator": "^6.8.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.10.3",
-    "nodemon": "^1.9.2"
+    "extract-text-webpack-plugin": "^1.0.1",
+    "nodemon": "^1.9.2",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
   }
 }
